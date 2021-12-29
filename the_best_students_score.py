@@ -5,12 +5,6 @@ students_score = {
     'Georgy': 5.00
 }
 
-if students_score['Ivan']<4.00:
-    students_score.pop('Ivan')
-if students_score['Alex']<4.00:
-    students_score.pop('Alex')
-if students_score['Maria']<4.00:
-    students_score.pop('Maria')
-if students_score['Georgy']<4.00:
-    students_score.pop('Georgy')
-print(students_score)
+for name, score in students_score.items():
+    if score>= 4.0:
+        print ('{} {}'.format(name,score))
