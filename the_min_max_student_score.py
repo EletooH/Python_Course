@@ -5,9 +5,12 @@ students_score = {
     'Georgy': 5.00
 }
 
+students_score_max = max(students_score, key=students_score.get)
+students_score_min = min(students_score, key=students_score.get)
+
 for name, score in students_score.items():
-    if name == max(students_score):
+    if name == students_score_max:
         print ('{} {}'.format(name,score))
 for name, score in students_score.items():
-    if name == min(students_score):
+    if name == students_score_min:
         print ('{} {}'.format(name,score))
