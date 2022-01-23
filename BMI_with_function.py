@@ -3,6 +3,21 @@ user_height = float(input ('Please, enter height in meters: '))
 user_weight = float(input ('Please, enter your weight in kilograms: '))
 
 def get_user_data(name, weight, height):
+    if len(user_name)<3:
+        print("Please, enter a name with minimum 3 characters!")
+        exit(0)
+    if user_height < 0.50:
+        print("Please, enter a height between o.50 and 2.50 meters!")
+        exit(0)
+    elif user_height > 2.50:
+        print("Please, enter a height between o.50 and 2.50 meters!")
+        exit(0)
+    if user_height < 50:
+        print("Please, enter a weight between 50 and 300 meters!")
+        exit(0)
+    elif user_height > 300:
+        print("Please, enter a weight between 50 and 300 meters!")
+        exit(0)
     user_data = dict()
     user_data ['name'] = name
     user_data ['weight'] = weight
