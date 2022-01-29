@@ -1,6 +1,3 @@
-class UserDataError(Exception):
-    pass
-
 def get_string_from_user(msg):
     user_input = input(msg)
     return user_input
